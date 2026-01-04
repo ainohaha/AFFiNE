@@ -1,6 +1,6 @@
 import { SignalWatcher, WithDisposable } from '@blocksuite/global/lit';
-import { ShadowlessElement } from '@blocksuite/block-std';
-import type { EditorHost } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@blocksuite/std';
+import type { EditorHost } from '@blocksuite/std';
 import { css, html } from 'lit';
 import { property, query, state } from 'lit/decorators.js';
 
@@ -136,7 +136,7 @@ export class GraphPanel extends SignalWatcher(
 
   override connectedCallback(): void {
     super.connectedCallback();
-    this.buildGraphData();
+    void this.buildGraphData();
   }
 
   override firstUpdated(): void {
@@ -461,7 +461,7 @@ export class GraphPanel extends SignalWatcher(
       ...this.viewState,
       showOrphans: !this.viewState.showOrphans,
     };
-    this.buildGraphData();
+    void this.buildGraphData();
   }
 
   private handleToggleFolders(): void {
@@ -469,7 +469,7 @@ export class GraphPanel extends SignalWatcher(
       ...this.viewState,
       showFolders: !this.viewState.showFolders,
     };
-    this.buildGraphData();
+    void this.buildGraphData();
   }
 
   private handleToggleLabels(): void {
@@ -486,7 +486,7 @@ export class GraphPanel extends SignalWatcher(
       ...this.viewState,
       searchQuery: input.value,
     };
-    this.buildGraphData();
+    void this.buildGraphData();
   }
 
   private handleResetView(): void {

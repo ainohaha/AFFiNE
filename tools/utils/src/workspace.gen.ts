@@ -525,6 +525,19 @@ export const PackageList = [
     ],
   },
   {
+    location: 'blocksuite/affine/fragments/graph-visualizer',
+    name: '@blocksuite/affine-fragment-graph-visualizer',
+    workspaceDependencies: [
+      'blocksuite/affine/components',
+      'blocksuite/affine/ext-loader',
+      'blocksuite/affine/model',
+      'blocksuite/affine/shared',
+      'blocksuite/framework/global',
+      'blocksuite/framework/std',
+      'blocksuite/framework/store',
+    ],
+  },
+  {
     location: 'blocksuite/affine/fragments/outline',
     name: '@blocksuite/affine-fragment-outline',
     workspaceDependencies: [
@@ -1517,6 +1530,7 @@ export type PackageName =
   | '@blocksuite/affine-fragment-adapter-panel'
   | '@blocksuite/affine-fragment-doc-title'
   | '@blocksuite/affine-fragment-frame-panel'
+  | '@blocksuite/affine-fragment-graph-visualizer'
   | '@blocksuite/affine-fragment-outline'
   | '@blocksuite/affine-gfx-brush'
   | '@blocksuite/affine-gfx-connector'

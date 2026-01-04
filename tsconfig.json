@@ -78,6 +78,7 @@
     { "path": "./blocksuite/affine/fragments/adapter-panel" },
     { "path": "./blocksuite/affine/fragments/doc-title" },
     { "path": "./blocksuite/affine/fragments/frame-panel" },
+    { "path": "./blocksuite/affine/fragments/graph-visualizer" },
     { "path": "./blocksuite/affine/fragments/outline" },
     { "path": "./blocksuite/affine/gfx/brush" },
     { "path": "./blocksuite/affine/gfx/connector" },
