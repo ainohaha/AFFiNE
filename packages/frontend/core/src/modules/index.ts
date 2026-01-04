@@ -32,6 +32,7 @@ import { configureExplorerIconModule } from './explorer-icon';
 import { configureFavoriteModule } from './favorite';
 import { configureFeatureFlagModule } from './feature-flag';
 import { configureGlobalContextModule } from './global-context';
+import { configureGraphVisualizerModule } from './graph-visualizer';
 import { configureI18nModule } from './i18n';
 import { configureIconPickerModule } from './icon-picker';
 import { configureImportClipperModule } from './import-clipper';
@@ -95,6 +96,7 @@ export function configureCommonModules(framework: Framework) {
   configureDocsSearchModule(framework);
   configureDocLinksModule(framework);
   configureOrganizeModule(framework);
+  configureGraphVisualizerModule(framework);
   configureFavoriteModule(framework);
   configureNavigationPanelModule(framework);
   configureThemeEditorModule(framework);

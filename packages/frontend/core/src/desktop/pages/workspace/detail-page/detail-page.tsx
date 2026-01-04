@@ -69,6 +69,7 @@ import { DetailPageWrapper } from './detail-page-wrapper';
 import { EditorAdapterPanel } from './tabs/adapter';
 import { EditorChatPanel } from './tabs/chat';
 import { EditorFramePanel } from './tabs/frame';
+import { EditorGraphPanel } from './tabs/graph';
 import { EditorJournalPanel } from './tabs/journal';
 import { EditorOutlinePanel } from './tabs/outline';
 
@@ -399,6 +400,72 @@ const DetailPageImpl = memo(function DetailPageImpl() {
         <Scrollable.Root className={styles.sidebarScrollArea}>
           <Scrollable.Viewport>
             <EditorOutlinePanel editor={editorContainer?.host ?? null} />
+          </Scrollable.Viewport>
+          <Scrollable.Scrollbar />
+        </Scrollable.Root>
+      </ViewSidebarTab>
+
+      <ViewSidebarTab
+        tabId="graph"
+        icon={
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="4"
+              y1="4"
+              x2="10"
+              y2="10"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            />
+            <line
+              x1="16"
+              y1="4"
+              x2="10"
+              y2="10"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            />
+            <line
+              x1="10"
+              y1="10"
+              x2="4"
+              y2="16"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            />
+            <line
+              x1="10"
+              y1="10"
+              x2="16"
+              y2="16"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            />
+            <line
+              x1="4"
+              y1="16"
+              x2="16"
+              y2="16"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            />
+            <circle cx="4" cy="4" r="2.5" fill="currentColor" />
+            <circle cx="16" cy="4" r="2.5" fill="currentColor" />
+            <circle cx="10" cy="10" r="2.5" fill="currentColor" />
+            <circle cx="4" cy="16" r="2.5" fill="currentColor" />
+            <circle cx="16" cy="16" r="2.5" fill="currentColor" />
+          </svg>
+        }
+      >
+        <Scrollable.Root className={styles.sidebarScrollArea}>
+          <Scrollable.Viewport>
+            <EditorGraphPanel editor={editorContainer?.host ?? null} />
           </Scrollable.Viewport>
           <Scrollable.Scrollbar />
         </Scrollable.Root>

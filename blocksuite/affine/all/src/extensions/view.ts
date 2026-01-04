@@ -22,6 +22,7 @@ import { FoundationViewExtension } from '@blocksuite/affine-foundation/view';
 import { AdapterPanelViewExtension } from '@blocksuite/affine-fragment-adapter-panel/view';
 import { DocTitleViewExtension } from '@blocksuite/affine-fragment-doc-title/view';
 import { FramePanelViewExtension } from '@blocksuite/affine-fragment-frame-panel/view';
+import { GraphVisualizerViewExtension } from '@blocksuite/affine-fragment-graph-visualizer/view';
 import { OutlineViewExtension } from '@blocksuite/affine-fragment-outline/view';
 import { BrushViewExtension } from '@blocksuite/affine-gfx-brush/view';
 import { ConnectorViewExtension } from '@blocksuite/affine-gfx-connector/view';
@@ -128,5 +129,6 @@ export function getInternalViewExtensions() {
     FramePanelViewExtension,
     OutlineViewExtension,
     AdapterPanelViewExtension,
+    GraphVisualizerViewExtension,
   ];
 }
